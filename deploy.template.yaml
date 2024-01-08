@@ -1,0 +1,11 @@
+spec:
+  name: actix-demo
+  services:
+    - dockerfile_path: Dockerfile
+      git:
+        branch: master
+        repo_clone_url: https://github.com/EvoTeamDevelop/actix-demo.git
+      name: actix-demo
+      http_port: 8080
+      instance_count: 1
+      instance_size_slug: basic-xxs
